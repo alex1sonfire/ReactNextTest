@@ -1,0 +1,77 @@
+@import 'fonts'
+@import 'variables'
+
+*
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+body
+    max-width: 1920px
+    margin: 0 auto
+    background-color: #ecedee
+    font-size: 16px
+.icon-picture
+    color: #fff
+    font-size: 78px
+.bold
+    font-size: 24px
+    font-family: $font-bold
+    color: $bold-text-color
+    text-transform: uppercase
+    line-height: 0.75 
+.regular
+    font-size: 16px
+    font-family: $font-primary
+    color: rgb(119, 119, 119)
+    line-height: 1.5             
+.slick-prev
+    cursor: pointer
+    position: absolute
+    width: 40px
+    height: 110px
+    top: 50px
+    left: -190px
+    transition: .3s ease-out
+    &:before
+        content: ''
+        height: 55px
+        width: 2px
+        background-color: #777777
+        position: absolute
+        transform: rotate(30deg)
+        cursor: pointer
+    &:after
+        content: ''
+        height: 55px
+        width: 2px
+        background-color: #777777
+        position: absolute
+        margin-top: 47px
+        transform: rotate(330deg)
+        cursor: pointer   
+.slick-next
+    cursor: pointer
+    position: absolute
+    width: 40px
+    height: 110px
+    top: 50px
+    right: -190px
+    transition: .3s ease-out
+    &:before
+        content: ''
+        height: 55px
+        width: 2px
+        background-color: #777777
+        position: absolute
+        transform: rotate(-30deg)
+        cursor: pointer
+    &:after
+        content: ''
+        height: 55px
+        width: 2px
+        background-color: #777777
+        position: absolute
+        margin-top: 47px
+        transform: rotate(-330deg)
+        cursor: pointer           
+
